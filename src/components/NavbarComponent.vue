@@ -16,7 +16,7 @@ const closeMenu = () => {
 <template>
   <div class="navbar_container main_container">
     <div class="navbar_content">
-      <img :src="infor.logo" :alt="infor.name" />
+      <img src="../assets/images/logo.png" :alt="infor.name" />
       <router-link :to="{ name: 'home' }" class="no-underline">
         {{ infor.name }}
       </router-link>
