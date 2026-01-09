@@ -1,0 +1,21 @@
+//golbal style for the app
+@import 'global';
+@import 'mixins';
+
+
+
+//partial style for the app
+@import 'navbar';
+@import 'footer';
+
+
+
+
+//main styles for the app
+@import 'contact';
+@import 'hero';
+@import 'food';
+@import 'details';
+@import 'favourite';
+@import 'home';
+@import 'about';

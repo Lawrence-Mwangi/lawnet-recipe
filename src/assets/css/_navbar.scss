@@ -1,0 +1,125 @@
+.navbar_container{
+    @include flex_center;
+    justify-content: space-between;
+    height: 10vh;
+    box-shadow: 2px 2px 3px $secondary-color;
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .navbar_content{
+        @include flex_center;
+        gap: 0.9em;
+
+        a{
+            @include anchor;
+            font-family: ‘Lobster’, cursive;
+            font-size: 1.4em;
+        }
+        
+        img{
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+        }
+        
+        .router-link-exact-active{
+            color: $accent-color;
+            font-size: bold;
+        }
+    }
+
+    .navbar_links{
+        ul{
+           list-style: none;
+            @include flex_center;
+            justify-content: space-between;
+            
+            li{
+                padding: 0 0.5em;
+
+                a{
+                    @include anchor;
+                    font-size: 1.2em;
+
+                }
+            }
+            .router-link-exact-active{
+                color: $accent-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+               
+    .burger{
+        display: none;
+        cursor: pointer;
+
+        span{
+            display: block;
+            height: 3px;
+            width: 30px;
+            background-color: $secondary-color;
+            margin: 6px 0;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+    }
+
+    .burger.active ~ .nav_links {
+        display: block;
+    }
+    .burger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px); 
+    }
+
+    .burger.active span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px); 
+    } 
+}
+
+@media screen and (width <=726px) {
+    .navbar_container{
+        .navbar_links{
+            ul{
+                flex-direction: column;
+                position: absolute;
+                justify-content: unset;
+                top: 10vh;
+                right: 0;
+                width: 35%;
+                height: 60vh;
+                background: $secondary-color;
+                backdrop-filter: blur(3px);
+                display: none;
+                z-index: 99;
+                border-radius: 8px 0 0 8px;
+                
+                a{
+                    color: $primary-color !important;
+                    @include flex_center;
+                    align-items: center;
+                    font-weight: 550;
+                    padding: 0.9em 0;
+                    font-size: 1.2em;
+                }
+
+                &.show{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }  
+            }
+        }
+
+        .burger{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.footer_container{
+    background: #212121;
+    .footer_content{
+        @include grid(3);
+
+        h3{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            padding: 0.8em 0;
+            text-decoration: underline;
+        }
+
+        .footer_infor{
+            h1{
+                font-family: ‘Lobster’, cursive;
+            }
+
+            p{
+                padding: 0.3em 0;
+                font-size: 1em;
+            }
+        }
+
+        .footer_links{
+            li{
+                padding: 0.3em 0;
+                list-style: none;
+
+                a{
+                    @include anchor;
+                    font-size: 1em;
+
+                    &:hover{
+                        color:$accent-color;
+                    }
+                }
+
+            }
+        }
+
+
+        .footer_social{
+            .socials{
+               @include flex-center;
+               justify-content: unset;
+               padding: 0.3em 0;
+               gap: 1em;
+                
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: 1em;
+        padding: 0.8em 0;
+    }
+}
+
+
+@media screen and (width <=726px) {
+    .footer_container{
+        .footer_content{
+            .footer_social{
+                .socials{
+                    justify-content: unset;
+                }
+            }
+        }
+    }
+}

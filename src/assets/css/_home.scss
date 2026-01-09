@@ -1,0 +1,108 @@
+.home_container{
+    .home_content{
+        padding: 3em 0;
+
+        h1{
+            padding: 0.5em 0;
+            color: $accent-color;
+        }
+
+        .home_infor{
+            @include grid(3);
+            
+            .items{
+                box-shadow: 1px 1px 1px 1px $secondary-color;
+                padding: 0.5em;
+                border-radius: 8px;
+
+                p{
+                    padding: 0.3em 0;
+                    font-size: 1.1em;
+                }
+
+            }
+        }
+    }
+
+    .home_links{
+        padding: 3em 0;
+
+        h1{
+            padding: 0.5em 0;
+            color: $accent-color;
+        }
+
+
+        .about_intro{
+            @include grid(2);
+
+            .img{
+                img{
+                    width: 70%;
+                    height: 45vh;
+                }
+            }
+
+            .about_infor{
+                padding: 0.5em 0;
+
+                p{
+                    font-size: 1.2em;
+                    padding: 0.9em 0;
+                }
+
+                button{
+                    border: none;
+                    border-radius: 8px;
+                    padding: 0.8em 2em;
+                    background-color: $accent-color;
+
+                    a{
+                        @include anchor;
+                        font-size: 1.2em;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .home_call{
+        h1{
+            color: $accent-color;
+            padding: 0.5em 0;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+
+        button{
+            border: none;
+            border-radius: 8px;
+            padding: 0.8em 2em;
+            background-color: $accent-color;
+            margin: 1.1em 0;
+
+            a{
+                @include anchor;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+        }
+    }   
+}
+
+
+@media screen and (width <=726px) {
+    .home_container{
+        .home_links{
+            .about_intro{
+                .img{
+                    display: none;
+                }
+            }
+        }
+    }
+}

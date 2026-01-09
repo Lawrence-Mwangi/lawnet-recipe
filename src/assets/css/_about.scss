@@ -1,0 +1,133 @@
+.about_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: $secondary-color;
+
+    section {
+        margin-bottom: 4rem;
+    }
+
+    .about_hero {
+        text-align: center;
+
+        h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: $accent-color;
+        }
+
+        p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        }
+
+        img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 12px;
+        margin: 0 auto;
+        display: block;
+        }
+    }
+
+    .about_history {
+        h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        }
+
+        p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        }
+    }
+
+    .about_mission_vision {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        div {
+        flex: 1 1 45%;
+        box-shadow: 1px 1px 1px  2px $secondary-color;
+        padding: 1.5rem;
+        border-radius: 10px;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: $accent-color;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        }
+    }
+
+    .about_team {
+        text-align: center;
+
+        h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: $accent-color;
+        }
+
+        .team_avatars {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .team_member {
+            max-width: 200px;
+            text-align: center;
+
+            img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1.2rem;
+            border: 3px solid #e74c3c;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            p {
+            font-size: 1.1em;
+            color: $secondary-color;
+            }
+        }
+        }
+    }
+
+    .about_extra {
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: $accent-color;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+
+            li {
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

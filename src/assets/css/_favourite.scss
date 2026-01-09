@@ -1,0 +1,50 @@
+.favourite_container{
+    h1{
+        padding: 0.9em 0;
+        text-align: center;
+        color: $accent-color;
+    }
+
+    p{
+        font-size: 1.2em;
+        padding: 1em 0;
+    }
+    
+    .favourite_content{
+        @include grid(5);
+        p{
+            font-size: 1.1em;
+        }
+
+        h3{
+            padding: 0.2em 0;
+        }
+
+        img{
+            height: 30vh;
+            border-radius: 12px;
+        }
+
+        .details-button{
+            display: inline-block;
+            padding: 0.2em 0.4em; 
+            @include anchor;
+            background-color: $accent-color;
+            margin-top: 0.8em;
+            border-radius: 8px;
+
+            &:hover{
+                background-color: #ff7903;
+            }
+        }
+
+    }
+
+    
+}
+
+@media screen and (width <=726px) {
+    .favourite_container{
+        padding: 0 5%;
+    }
+}
