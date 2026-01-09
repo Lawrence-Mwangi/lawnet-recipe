@@ -84,7 +84,7 @@ export default [
         Season with salt and black pepper.
         Simmer for 10–15 minutes, stirring occasionally, to allow flavors to combine.
         Garnish with chopped coriander and serve hot.`,
-        image: new URL('@/assets/images/githeri.jpg', import.meta.url).href
+        image: new URL('@/assets/images/githeris.jpg', import.meta.url).href
     },
 
     {
@@ -164,7 +164,7 @@ export default [
         Season with salt and pepper.
         Grill over charcoal until well cooked.
         Sprinkle lemon juice and serve hot.`,
-        image: new URL('@/assets/images/nyama_choma.jpg', import.meta.url).href
+        image: new URL('@/assets/images/nyama.jpg', import.meta.url).href
     },
 
     {
